@@ -13,7 +13,8 @@ public class BrowserFactory {
 	public static WebDriver startApplication(WebDriver driver, String browserName, String AppUrl)
 	{
 		if(browserName.equals("chrome"))
-		{
+		{    
+			System.setProperty("webdriver.chrome.silentOutput", "true");
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 			driver=new ChromeDriver();		
 
