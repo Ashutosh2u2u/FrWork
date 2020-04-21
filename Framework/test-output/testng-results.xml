@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" ignored="1" total="2" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Setting up reports and Test getting ready]]>
@@ -7,25 +7,13 @@
     <line>
       <![CDATA[Setting done--Test can be started]]>
     </line>
-    <line>
-      <![CDATA[Trying to start browser -Getting application ready]]>
-    </line>
-    <line>
-      <![CDATA[Browser and application is up and Running]]>
-    </line>
-    <line>
-      <![CDATA[Test is about to end]]>
-    </line>
-    <line>
-      <![CDATA[Test completed >>>Reports generated]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23727" started-at="2020-04-10T08:19:01Z" finished-at="2020-04-10T08:19:24Z">
+  <suite name="Suite" duration-ms="133" started-at="2020-04-21T10:17:10Z" finished-at="2020-04-21T10:17:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23727" started-at="2020-04-10T08:19:01Z" finished-at="2020-04-10T08:19:24Z">
+    <test name="Test" duration-ms="133" started-at="2020-04-21T10:17:10Z" finished-at="2020-04-21T10:17:10Z">
       <class name="com.framework.testcases.AppLogin">
-        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.framework.testcases.AppLogin@5b275dab]" name="setupSuite" is-config="true" duration-ms="947" started-at="2020-04-10T13:49:00Z" finished-at="2020-04-10T13:49:01Z">
+        <test-method status="PASS" signature="setupSuite()[pri:0, instance:com.framework.testcases.AppLogin@4501b7af]" name="setupSuite" is-config="true" duration-ms="2234" started-at="2020-04-21T15:47:07Z" finished-at="2020-04-21T15:47:10Z">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and Test getting ready]]>
@@ -35,42 +23,89 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.framework.testcases.AppLogin@5b275dab]" name="setup" is-config="true" duration-ms="13277" started-at="2020-04-10T13:49:01Z" finished-at="2020-04-10T13:49:14Z">
+        <test-method status="FAIL" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.framework.testcases.AppLogin@4501b7af]" name="setup" is-config="true" duration-ms="0" started-at="2020-04-21T15:47:10Z" finished-at="2020-04-21T15:47:10Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[Trying to start browser -Getting application ready]]>
-            </line>
-            <line>
-              <![CDATA[Browser and application is up and Running]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginToApp()[pri:0, instance:com.framework.testcases.AppLogin@5b275dab]" name="LoginToApp" duration-ms="4177" started-at="2020-04-10T13:49:14Z" finished-at="2020-04-10T13:49:18Z">
+        <test-method status="SKIP" signature="LoginToApp()[pri:0, instance:com.framework.testcases.AppLogin@4501b7af]" name="LoginToApp" duration-ms="0" started-at="2020-04-21T15:47:10Z" finished-at="2020-04-21T15:47:10Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToApp -->
-        <test-method status="PASS" signature="tearDownMethods(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.AppLogin@5b275dab]" name="tearDownMethods" is-config="true" duration-ms="437" started-at="2020-04-10T13:49:18Z" finished-at="2020-04-10T13:49:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginToApp status=SUCCESS method=AppLogin.LoginToApp()[pri:0, instance:com.framework.testcases.AppLogin@5b275dab] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test is about to end]]>
-            </line>
-            <line>
-              <![CDATA[Test completed >>>Reports generated]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- tearDownMethods -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.testcases.AppLogin@5b275dab]" name="tearDown" is-config="true" duration-ms="5810" started-at="2020-04-10T13:49:18Z" finished-at="2020-04-10T13:49:24Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.framework.testcases.AppLogin@4501b7af]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-04-21T15:47:10Z" finished-at="2020-04-21T15:47:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.framework.testcases.AppLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

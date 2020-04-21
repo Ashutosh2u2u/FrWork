@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 06 19:44:30 IST 2020</td>
+<td>Started on:</td><td>Tue Apr 21 15:47:10 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (221 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (133 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,36 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.framework.testcases.AppLogin.setup()'><b>setup</b><br>Test class: com.framework.testcases.AppLogin</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:24)
-	at com.framework.pages.BaseClass.setup(BaseClass.java:26)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1785397234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1785397234'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:24)
-	at com.framework.pages.BaseClass.setup(BaseClass.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1595282218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1595282218'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
@@ -126,7 +107,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
 <td>0</td>
-<td>com.framework.testcases.AppLogin@523884b2</td></tr>
+<td>com.framework.testcases.AppLogin@4501b7af</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -139,7 +120,7 @@ function toggleAllBoxes() {
 <td title='com.framework.testcases.AppLogin.tearDown()'><b>tearDown</b><br>Test class: com.framework.testcases.AppLogin</td>
 <td></td>
 <td>0</td>
-<td>com.framework.testcases.AppLogin@523884b2</td></tr>
+<td>com.framework.testcases.AppLogin@4501b7af</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -150,36 +131,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.framework.testcases.AppLogin.LoginToApp()'><b>LoginToApp</b><br>Test class: com.framework.testcases.AppLogin</td>
-<td><div><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:24)
-	at com.framework.pages.BaseClass.setup(BaseClass.java:26)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316557528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1316557528'><pre>java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
-	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:44)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:167)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:190)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at com.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:24)
-	at com.framework.pages.BaseClass.setup(BaseClass.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1496949625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1496949625'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method setup but has not been marked @Optional or defined
+in C:\Users\acer a\git\FrWork\Framework\XMLfiles\testng.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:199)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:443)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:118)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:206)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:166)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
@@ -200,7 +162,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
 <td>0</td>
-<td>com.framework.testcases.AppLogin@523884b2</td></tr>
+<td>com.framework.testcases.AppLogin@4501b7af</td></tr>
 </table><p>
 </body>
 </html>
